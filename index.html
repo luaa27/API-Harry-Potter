@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potter Houses</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+       
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Bem-vindo a Hogwarts!</h1>
+    </header>
+    
+    <section id="sorting-hat-section">
+        <button id="sorting-hat-button">Clique para descobrir sua casa</button>
+        <p id="sorting-hat-result"></p>
+    </section>
+
+    <main>
+        <div class="houses">
+            <img src="img/logo-grifinoria-removebg-preview.png" alt="Grifinória" width="230px" onclick="fetchHouse('gryffindor')">
+            <img src="img/Calouro_Lufa-lufa-removebg-preview.png" alt="Lufa-Lufa" width="205" onclick="fetchHouse('hufflepuff')">
+            <img src="img/logo-corvinal-removebg-preview.png" alt="Corvinal" width="169x" onclick="fetchHouse('ravenclaw')">
+            <img src="img/logo-sonserina-removebg-preview.png" alt="Sonserina" width="230px" onclick="fetchHouse('slytherin')">
+        </div>
+
+        <section class="house-info">
+            <div class="info" id="house-info"></div>
+        </section>
+
+        <section id="characters-section" style="display:none;">
+            <DIV class="personagens">
+                <h2>Personagens</h2>
+            </DIV>
+            <div class="blabla">
+                <input type="text" id="character-search" placeholder="Pesquisar personagem">
+                <ul id="characters-list"></ul>
+            </div>
+        </section>
+
+        <div id="background"></div>
+        <div id="background-overlay"></div>
+        <div id="initial-background"></div>
+
+        <section class="house-info" id="house-info-section">
+            <div class="info" id="house-info"></div>
+        </section>
+ <div class="verpersonagens"><button id="back-to-hogwarts" class="black-button">Ver Personagens</button>
+ </div>       
+       
+
+        <script src="app.js"></script>
+    </main>
+</body>
+
+</html>
